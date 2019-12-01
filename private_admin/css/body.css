@@ -1,0 +1,93 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(226, 224, 243);
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+body .navbar{
+  background-color:rgb(43, 42, 42) ;
+  height: 10vh;
+}
+body .navbar .navbar-brand{
+  text-align: left;
+  font-weight: 900;
+  display: flex;
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.navbar .fas{
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  width: 30px;
+  margin-right: 20px;
+  position: relative;
+}
+/* drop down menu--------- start*/
+
+.row .menuActive{
+  display: none;
+}
+.row {
+  top: 10vh;
+  position: relative;
+} 
+.row .col-md-2  {
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  padding: 5px;
+  border-radius: 3px;
+
+}
+.row .col-md-2 ul{
+  padding: 5px;
+  margin:5px;
+  list-style: none;
+}
+.row .col-md-2 ul li{
+  padding: 10px;
+  margin-top:15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.row .col-md-2 ul li:first-child{
+  margin-top: 0px;
+}
+.row .col-md-2 ul li:hover{
+  background-color: #7270ff;
+
+}
+.row .col-md-2 ul li a{
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  line-height: 10px;
+}
+.row .col-md-2 ul li a i{
+  color: #000;
+  margin: 5px;
+}
+
+/* drop down menu--------- end*/
+.row .table td img {
+  border: 1px solid #360b0b;
+  height: 150px;
+  width: auto;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   padding-top: 20px;
+   background-color:rgb(43, 42, 42) ;
+   color: purple;
+   text-align: center;
+}

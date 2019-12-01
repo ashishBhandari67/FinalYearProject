@@ -1,0 +1,676 @@
+*{
+    margin-top: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#fffdf9;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+.nav-head{
+    max-height: 17vh;
+    background-color: #373f38;
+    height: 15vh;
+    position: sticky;
+    text-align: left;
+    vertical-align: top;
+}
+.logo{
+    display: inline-block;
+    margin: 0px;
+    overflow: auto;
+    width: 100px;
+    height: 15vh;
+    margin-left:0px;
+    overflow: hidden;
+    /* border: 1px solid #fff; */
+}
+.playstore{
+    display: inline-block;
+    margin: 5px;
+    margin-bottom:20px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    border-radius: 2px;
+    /* border:1px solid red; */
+}
+.user{
+    margin: 5px;
+    margin-top:20px;
+    overflow: hidden;
+    /* border:1px solid red; */
+    width: auto;
+    height: auto;
+    display: inline-block;
+    float: right;
+    cursor:pointer;
+    transition: transform 0.4s ease-in;
+
+}
+.logo img{
+    width: auto;
+    height: 15vh;
+}
+.user img{
+    width: auto;
+    height: 8vh;
+}
+.playstore img{
+    width: auto;
+    height: 7vh;
+}
+header .navbar{ 
+  margin: 0px;
+  overflow: hidden;
+  margin-left:5%;
+  display: inline-block;
+  align-items: right;
+    /* border: 1px solid #fff; */
+    /* background-color: #1d1c1b; */
+  border-radius:2px;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    /* border: 1px solid red; */
+    /* height: 12vh; */
+    font-size: 17px;
+    text-align: right;
+    font-family:  sans-serif;
+}
+header ul li{
+    /* margin:7px 3px; */
+    /* height:100%; */
+        /* border: 1px solid red; */
+        border-left:1px solid #66ff6d;
+        /* border-right-color: #66ff6d; */
+    border-radius: 1px;  
+    /* background-color: #cec9e6; */
+    transition: transform 0.2s ease-in;
+
+}
+header ul li a{
+    margin:0px 7px;
+    text-decoration: none;
+    color:#ffff;
+    text-transform: capitalize;
+    font-weight: 200px;    
+    letter-spacing: 1px;
+    /* background-color: #8f5114; */
+    text-shadow: 1px 2px 3px  #000;
+}
+header ul li a:hover{
+    /* border-bottom: 2px solid #f07109; */
+    color: #fff;
+    text-shadow: 1px 1px 2px #fff;
+
+}
+
+header ul li:hover{
+    background-color: #373f38;
+}
+header .icon div{
+    background-color: #fff;
+    width: 15px;
+    height: 2px;
+    padding:1.5px 10px;
+    margin: 4px;
+    border-radius: 2px;
+    transition: transform 0.2s ease-in;
+
+}
+header .icon{
+    display: none;
+    margin: 30px 10px;
+}
+ /* search form */
+ .nav-head .search{  
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: inline-block;
+    padding:2px 6px;
+    margin: 5px;
+    margin-bottom:20px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+.nav-head .search input{
+    border:none;
+    height:30px;
+    width: 30vh;
+    line-height: 20px;
+    font-size: 18px;
+    color:rgba(17, 16, 16, 0.856);
+    border-right: 1px solid #b1aaaa;
+}
+.nav-head .search button{
+    border: none;
+    background: none;
+    font-size: 18px;
+    color:#5a5e5b;
+}
+
+
+@media only screen and (max-width:1250px){
+   
+    header .navbar{ 
+        margin-left:1%;
+    }
+    .nav-head .search input{
+      
+        width: 23vh;
+        font-size: 17px;
+    }
+    .nav-head .search{  
+      
+        height: 5vh;
+    }
+    .playstore{
+        height: 11vh;
+        margin: -15px auto;
+    }
+    .playstore img{
+            height:5vh;
+        } 
+        
+    
+}
+@media only screen and (max-width:1100px){
+  
+
+    header .navbar{ 
+        margin-left:-1%;
+    }
+    .nav-head .search{  
+        padding:2px 6px;
+        margin: 0px auto;
+        margin-top:20px;
+        height: 5vh;
+    }
+    .nav-head .search input{
+        width: 20vh;
+        font-size: 17px;
+    }
+    .nav-head{
+        height: 12vh;
+        display: flex;
+        flex-direction:row;
+    }
+
+    .logo{
+        height:11vh;
+    }
+    .playstore, .user{
+        height: 12vh;
+        width:auto;
+        margin: 15px auto;
+    }
+ 
+    header .icon{        
+        top:-8px;
+        display: inline-block;
+        cursor:pointer;
+        position: absolute;
+        right: 5%;
+    }
+  
+    .playstore img{
+        height:5vh;
+    } 
+    .user img{
+        height:6vh;
+    }
+    .user {
+            height:6vh;
+            margin-right:15vh;
+            width: 7vh;
+            /* border: 1px solid red; */
+    }
+    header .navbar{ 
+        position: absolute;
+        right: 0px;
+        height: auto;
+        top:12vh;
+        width:50%;
+        background-color: rgba(0, 0, 0, 0.541);
+        transform: translateX(100%);
+        overflow-x: hidden;
+        z-index: 1; /*block other display and stay top */
+        transition: transform 0.4s ease-in;
+    }
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li{
+        margin:15px 18px;
+        padding:15px 18px;
+        border:none;
+    }
+    header ul li:hover{
+        background-color: rgba(0, 0, 0, 0.664);
+        border-radius: 3px;
+
+    }
+    header ul li a{
+        font-weight: bold;
+    }
+    header ul li a:hover{
+        font-size: 19px;
+    }
+
+}
+@media screen and (max-width:720px){
+    .nav-head{
+        height: 11vh;
+        text-align:right;
+    }
+    .logo{
+        height:11vh;
+    }
+    .playstore, .user{
+            height: 11vh;
+            margin: 20px auto;
+   }
+    .playstore img{
+            height:5vh;
+        } 
+      
+    .user img{
+            height:6vh;
+     }
+    .user {
+            height:6vh;
+            margin-right:15vh;
+            width: 7vh;
+            /* border: 1px solid red; */
+    }
+    #menu{
+            margin-left: 5px;
+        }
+
+}
+
+header .navactive{ 
+    transform: translateX(0%);
+}
+header .toggle .line1{
+    transform: rotate(45deg) translate(6px, 6px);
+}
+header .toggle .line2{
+    display: none;
+}
+header .toggle .line3{
+    transform: rotate(-45deg) translate(-0px, 0px);
+}
+
+ /* rotating user icon */
+ .rotate_user{
+    transform:rotate3d(0, 1, 0, 180deg);
+}
+
+ /* navigation end____________________*/
+
+ /* login form start___________________*/
+ .loginForm{
+     width:100%;
+     height: 100%;
+      display:none; /*hiding by default */
+     position:absolute;
+     text-align: right;
+      z-index: 1; /*block other display and stay top */
+     background-color:rgba(0, 0, 0, 0.63);
+ }
+
+
+ .formWrapper{
+    /* border:1px solid #f07109; */
+    display: inline-block;
+    margin:2px 5px;
+    animation: fadeIn 2s;
+}
+
+ /* keyframe for fade in and fade out__________start */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/* @keyframes fadeOut{
+    form{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
+} */
+ /* keyframe for fade in and fade out__________ end */
+
+.loginForm form{
+    margin:30px 10px;
+    padding: 10px 5px;
+    width: fit-content;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+}
+
+#form_wrapper:before{/* creating pointer on border */
+    content:' ';
+    width: 0px;
+    height: 0px;
+    border-top:10px solid transparent;
+    border-bottom: 40px solid rgb(255, 255, 255);
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+    position: absolute;
+    top:-1%;
+    right:3%;
+}
+form h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    -webkit-transition: all 0.12s ease-out;
+    -moz-transition: all 0.12s ease-out;
+    -o-transition: all 0.12s ease-out;
+    margin-bottom: 25px;
+}
+
+h1:hover {
+    position: relative; top: -2px; left: -2px; 
+    text-shadow: 1px 1px #fe4902, 2px 2px #fe4902, 3px 3px #fe4902, 4px 4px #fe4902, 5px 5px #fe4902, 6px 6px #fe4902;  margin-left: 20px;
+}
+.loginForm  form input{
+    padding:5px 2px;
+    margin: 8px 25px;
+    display:table-row;
+    border:none;
+    line-height: 20px;
+    font-size: 15px;
+    border-bottom:1.5px solid#00000094;
+}
+.loginForm form button{
+    padding:8px 15px;
+    margin:20px 8px;
+    border:none;
+    border-radius:5px; 
+    width:auto;
+    position: relative;
+    background-color:#585858;
+    color:#fff;
+    line-height:25px;
+    font-size:16px;
+    cursor: pointer;
+    text-shadow: 1px -1px#000;
+
+}
+.loginForm form button:hover{
+    background-color:#221f1e;
+    text-shadow: 1px 2px 3px #000;
+}
+
+.loginForm form .links a:first-child{
+    color:#fe0202;
+    font-size:13px;
+    margin:0px 5px;
+    float:none;
+    text-shadow:none;
+    text-transform:capitalize;
+    text-decoration: underline;
+}
+.loginForm form .links a:first-child:hover{
+    text-shadow: 2px 2px 3px #fe0202;
+}
+
+.loginForm form .links a{
+    float:right;
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+/* Top header _____________END */
+
+/* Top banner _____________start */
+
+/* Slideshow container */
+
+
+/* Fading animation */
+.FADE {/* class name is written in block letter due to bootstrap issue */
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@keyframes FADE{
+    from{ opacity: .4;  }
+    to{ opacity: 1;  }
+} 
+
+@-webkit-keyframes FADE{/* for safari */
+    from{ opacity: .4;  }
+    to{ opacity: 1;  }
+}  
+.galleryContainer{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    user-select: none;
+    box-shadow: 0px 0px 3px 1px #00000078;
+    box-sizing: border-box;
+}
+.galleryContainer .slideShowContainer{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    background-color: gainsboro;
+    position: relative;
+}
+.galleryContainer .slideShowContainer #playPause{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url(../images/playPause.png);
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-size: cover;
+    margin: 5px;
+    cursor: pointer;
+}
+.galleryContainer .slideShowContainer #playPause:hover{
+    opacity: .7;
+}
+.galleryContainer .slideShowContainer .imageHolder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.galleryContainer .slideShowContainer .imageHolder img{
+    width: 100%;
+    height: 100%;
+}
+.galleryContainer .slideShowContainer .imageHolder .captionText{
+    display: none;
+}
+
+.galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow{
+    width: 50px;
+    background: #0000006b;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background 0.5s;
+    height: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.galleryContainer .slideShowContainer .rightArrow{
+    left: auto;
+    right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.galleryContainer .slideShowContainer .leftArrow:hover,.galleryContainer .slideShowContainer .rightArrow:hover{
+    background: #000000a9
+    ;
+    cursor: pointer;
+}
+.galleryContainer .slideShowContainer  .leftArrow, .galleryContainer .slideShowContainer  .rightArrow{
+    display: none;
+}
+.galleryContainer .slideShowContainer:hover  .leftArrow, .galleryContainer .slideShowContainer:hover  .rightArrow{
+    display: block;
+}
+
+.galleryContainer .arrow{
+    display: inline-block;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.galleryContainer .arrow.arrowLeft{
+    transform: rotateZ(-135deg);
+}
+.galleryContainer .arrow.arrowRight{
+    transform: rotateZ(45deg);
+}
+
+
+.galleryContainer .slideShowContainer>.captionTextHolder{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background: #00000047;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+.galleryContainer .slideShowContainer>.captionTextHolder>.captionText{
+    margin: 0;
+}
+
+.galleryContainer #dotsContainer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.galleryContainer #dotsContainer .dots{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: #bbb;
+    cursor: pointer;
+    transition:background-color 0.5s;
+}
+.galleryContainer #dotsContainer .dots:first-child{
+    margin-left: 0;
+}
+.galleryContainer #dotsContainer .dots:hover,.galleryContainer #dotsContainer .dots.active{
+    background-color: #717171;;
+}
+
+
+
+
+.galleryContainer .moveLeftCurrentSlide{
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+
+}
+.galleryContainer .moveLeftNextSlide{
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveLeftCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: -100%;opacity: 1;}
+}
+@keyframes moveLeftNext {
+    from {margin-left: 100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+
+
+.galleryContainer .moveRightCurrentSlide{
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+.galleryContainer .moveRightPrevSlide{
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveRightCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: 100%;opacity: 1;}
+}
+@keyframes moveRightPrev {
+    from {margin-left: -100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+.slideTextFromBottom {
+    animation-name: slideTextFromBottom;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromBottom {
+    from {opacity: 0;margin-top: 100px}
+    to {opacity: 1;margin-top: 0px;}
+}
+.slideTextFromTop {
+    animation-name: slideTextFromTop;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromTop {
+    from {opacity: 0;margin-top: -100px}
+    to {opacity: 1;margin-top: 0px;}
+}
+/* Top banner _____________END */
+.flex-row  .p-2 img{
+    width: auto;
+    height: 200px;
+}
