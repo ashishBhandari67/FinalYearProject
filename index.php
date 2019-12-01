@@ -82,7 +82,7 @@
 <div class="d-flex flex-sm-row">...</div>
 <div class="d-flex flex-md-row">...</div>
 <div class="d-flex flex-lg-row">...</div>
-<div class="d-flex flex-xl-row">...</div>
+<div class="d-flex flex-xl-row">..</div>
 
 
 
